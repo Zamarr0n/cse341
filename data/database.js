@@ -4,7 +4,7 @@ dotenv.config();
 const mongo = require("mongodb");
 async function main(){
 const password =  encodeURIComponent(process.env.MONGO_URL);
-const URL = `mongodb+srv://emiliozamarrons:${password}@cluster1.lgljyqa.mongodb.net/project1`;
+const URL = password;
 const client = new mongo.MongoClient(URL);
 try {
     await client.connect();
