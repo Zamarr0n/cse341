@@ -2,7 +2,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const mongo = require("mongodb");
-// let database;
 async function main(){
 const password =  encodeURIComponent(process.env.MONGO_URL);
 const URL = `mongodb+srv://emiliozamarrons:${password}@cluster1.lgljyqa.mongodb.net/project1`;
@@ -21,6 +20,5 @@ try {
 
 
 module.exports = {
-    // initDb, getDatabase
     main
 };
