@@ -1,0 +1,33 @@
+### get all the Contacts
+GET http://localhost:8080/users
+
+###get a specific Contact
+GET http://localhost:8080/users/666f1121f3579d09af2a563b
+
+
+### Create a Contact
+POST http://localhost:8080/users
+content-type: application/json
+
+{ 
+    "firstName":"Arturo ",
+    "lastName":"Gomez",
+    "email":"Gomezarturo@gmail",
+    "favColor":"red",
+    "phone":"980-9897-09878",
+    "birthday":"Sep 20"
+}
+
+### Update a user:
+PUT http://localhost:8080/users/66764e4a6c736ac8826ee4e9 HTTP/1.1
+content-type: application/json
+
+{
+    "email":"test@gmail.com",
+    "username":"username",
+    "name":"Pedro",
+    "ipaddress":"89.908.234.65"
+}
+
+###
+DELETE http://localhost:8080/users/66764e4a6c736ac8826ee4e9 HTTP/1.1
