@@ -13,7 +13,7 @@ try {
 } catch (error){
     console.log(error)
 } finally {
-    await client.close();
+    await client.close(); 
 }
 
 }

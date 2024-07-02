@@ -11,7 +11,7 @@ const getAll = async(req,res) =>{
     const result = await client.db('project1').collection('users').find();
     result.toArray().then((users) =>{
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(users);
+        res.status(p200).json(users);
     });
 };
 
@@ -23,7 +23,7 @@ const getSingle = async(req,res) =>{
     result.toArray().then((users) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(users[0]);
-    });
+    }); 
 };
 
 const createUser = async(req, res) =>{

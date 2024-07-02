@@ -8,6 +8,7 @@
   "host": "cse341-uldw.onrender.com",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
