@@ -11,7 +11,7 @@ const getAll = async(req,res) =>{
     const result = await client.db('project1').collection('users').find();
     result.toArray().then((users) =>{
         res.setHeader('Content-Type', 'application/json');
-        res.status(p200).json(users);
+        res.status(200).json(users);
     });
 };
 

@@ -1,5 +1,5 @@
 const isAuthenticated = (req,res,next) => {
-    if(req.session.user == underfined){
+    if(req.session.user === undefined){
         return res.status(401).json("You dont have access");    
     }
     next();
@@ -7,4 +7,4 @@ const isAuthenticated = (req,res,next) => {
 
 
 
-module.exports = {isAuthenticated}
+module.exports = {isAuthenticated};
